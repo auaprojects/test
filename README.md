@@ -28,22 +28,17 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo2.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h2 align="center">EcoCyc</h2>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    Public repository for EcoCyc, a submission for the IBM Call for Code 2021
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://youtu.be/qUR4NXnaEDk">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
 
@@ -54,23 +49,20 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#what-is-EcoCyc">What is EcoCyc</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#short-description">Short Description</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#problem">What's the problem?</a></li>
+        <li><a href="#how-can-technology-help">How can technology help</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#demo-video">Demo Video</a></li>
+    <li><a href="#solution-architecture">Solution Architecture</a></li>
+    <li><a href="#contributing">Long Description</a></li>
+    <li><a href="#project-roadmap">Project Roadmap</a></li>
+    <li><a href="#contact">Getting Started</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -78,37 +70,47 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## What is EcoCyc
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+EcoCyc is a cross-platform app aimed at connecting people with recycling professionals, while educating them on the merits and best practices of recycling. EcoCyc allows recycling professionals to collect recyclable waste directly from users' locations. With the Covid-19 pandemic, human movements and interactions must be reduced. The user can create a collection request depending on the address and the schedule he has defined. The waste collector can then connect to the application in order to select the requests for the collections that have been created. At the request creation, the user can choose the date and time he would like the pick up to be done.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+## Short Description
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+### What's the problem?
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+In Kenya and particularly in Nairobi, huge quantities of waste are endangering residents' health and their natural environment. Nairobi's seven million inhabitants produce more than 3,000 tonnes of waste a day. Lots of it ends up on the side of the road, in rivers, or is burned. 
+Waste not only dominates the streetscape, but poses a threat to the environment and people's health. Due to the lacking of recycling facilities, a lot of waste is lost in nature and contributes greatly to environmental degradation. There is no platform or strategy allowing different people to connect with recycling professionals.
 
-### Built With
+### How can technology help
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+- Connect people and recycling professionals through a mobile application that will be accessible free of charge to all.
+- Encourages people to recycle by making it easier for them to manage their waste. This translates into the establishment of a pick up system where people do not have to move.
+- Implementing a solution for the greatest number of people, that's why we offer a cross-platform solution (Web, Android, iOS).
+- Educate people on the importance of recycling by recycling professionals through digital posts and flyers that can be shared on EcoCyc.
+
+EcoCyc uses IBM Cloudant NoSQL database service to store all application data. Communication between Cloudant and the ionic front-end is handled using IBM's Cloud Functions service. Using the IBM cloud Service we have created the REST APIs necessary for the proper functioning of EcoCyc.
 
 
+## Demo Video
 
-<!-- GETTING STARTED -->
-## Getting Started
+[![Watch the video](https://i.ytimg.com/vi/qUR4NXnaEDk/0.jpg)](https://youtu.be/qUR4NXnaEDk)
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Solution Architecture
+
+<p align="center">
+  <img src="your_relative_path_here" title="EcoCyC Architecture">
+  <img src="images/structure.png" alt="architecture">
+</p>
+
+1.	The user interacts with EcoCyc mobile application.
+2.	The Ionic app communicates with the back-end APIs.
+3.	The backend API is defined in Cloud Functions APIs.
+4.	Cloud Functions API forwards the request to Cloud Functions.
+5.	The back end stores and retrieves information on material that is provided by users in an IBM Cloudant NoSQL database.
+
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -116,21 +118,12 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+## Project Roadmap
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+<p align="center">
+  <img src="your_relative_path_here" title="EcoCyC Architecture">
+  <img src="images/structure.png" alt="architecture">
+</p>
 
 
 

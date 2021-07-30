@@ -62,8 +62,14 @@
     <li><a href="#solution-architecture">Solution Architecture</a></li>
     <li><a href="#contributing">Long Description</a></li>
     <li><a href="#project-roadmap">Project Roadmap</a></li>
-    <li><a href="#contact">Getting Started</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisite">Prerequisite</a></li>
+        <li><a href="#run">Run</a></li>
+      </ul>
+    </li>
+    <li><a href="#built-with">Built With</a></li>
   </ol>
 </details>
 
@@ -71,8 +77,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## What is EcoCyc
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 EcoCyc is a cross-platform app aimed at connecting people with recycling professionals, while educating them on the merits and best practices of recycling. EcoCyc allows recycling professionals to collect recyclable waste directly from users' locations. With the Covid-19 pandemic, human movements and interactions must be reduced. The user can create a collection request depending on the address and the schedule he has defined. The waste collector can then connect to the application in order to select the requests for the collections that have been created. At the request creation, the user can choose the date and time he would like the pick up to be done.
 
@@ -101,8 +105,7 @@ EcoCyc uses IBM Cloudant NoSQL database service to store all application data. C
 ## Solution Architecture
 
 <p align="center">
-  <img src="your_relative_path_here" title="EcoCyC Architecture">
-  <img src="images/structure.png" alt="architecture">
+  <img src="images/structure.PNG" alt="architecture">
 </p>
 
 1.	The user interacts with EcoCyc mobile application.
@@ -113,48 +116,47 @@ EcoCyc uses IBM Cloudant NoSQL database service to store all application data. C
 
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
 
 ## Project Roadmap
 
 <p align="center">
-  <img src="your_relative_path_here" title="EcoCyC Architecture">
-  <img src="images/structure.png" alt="architecture">
+  <img src="images/roadmap.PNG" alt="roadmap">
 </p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Getting Started
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Prerequisite
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Download & install <a href="https://nodejs.org/en/">Nodejs</a>
+* Install <a href="https://ionicframework.com/">Ionic</a> and [Capacitor](https://capacitorjs.com/)
+* Install [Angular](https://angular.io/)
 
+### Run
 
+* Clone the project
+  ```sh
+  git clone https://github.com/auaprojects/EcoCyc.git
+  ```
+* npm install
+  ```sh
+  npm install
+  ```
+* run the project on a bowser
+  ```sh
+  ionic serve
+  ```
 
-<!-- ROADMAP -->
-## Roadmap
+## Built With
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
+1. Ionic
+2. Capacitor
+3. Angular
+4. Nodejs
+5. IBM Cloudant
+6. IBM Cloud Functions
 
 <!-- LICENSE -->
 ## License
@@ -162,46 +164,3 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
